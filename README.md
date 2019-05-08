@@ -99,7 +99,7 @@ yum install  python-devel mysql-devel  -y
 
 git clone https://github.com/hequan2017/seal
 cd seal
-python install -r requirements.txt
+python install -r requirements.txt -i http://pypi.douban.com/simple --trusted-host pypi.douban.com 
 python manage.py makemigrations
 python manage.py migrate
 python manage.py createsuperuser
