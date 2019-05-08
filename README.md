@@ -99,6 +99,9 @@ yum install  python-devel mysql-devel  -y
 
 git clone https://github.com/hequan2017/seal
 cd seal
+
+wget --no-check-certificate https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py
 pip3 install -r requirements.txt -i http://pypi.douban.com/simple --trusted-host pypi.douban.com 
 python3 manage.py makemigrations
 python3 manage.py migrate
